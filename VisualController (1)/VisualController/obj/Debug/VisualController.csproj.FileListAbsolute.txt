@@ -1,0 +1,16 @@
+c:\users\timod\documents\visual studio 2015\Projects\VisualController\VisualController\bin\Debug\VisualController.exe.config
+c:\users\timod\documents\visual studio 2015\Projects\VisualController\VisualController\bin\Debug\VisualController.exe
+c:\users\timod\documents\visual studio 2015\Projects\VisualController\VisualController\bin\Debug\VisualController.pdb
+c:\users\timod\documents\visual studio 2015\Projects\VisualController\VisualController\obj\Debug\VisualController.csprojResolveAssemblyReference.cache
+c:\users\timod\documents\visual studio 2015\Projects\VisualController\VisualController\obj\Debug\VisualController.Form1.resources
+c:\users\timod\documents\visual studio 2015\Projects\VisualController\VisualController\obj\Debug\VisualController.Properties.Resources.resources
+c:\users\timod\documents\visual studio 2015\Projects\VisualController\VisualController\obj\Debug\VisualController.csproj.GenerateResource.Cache
+c:\users\timod\documents\visual studio 2015\Projects\VisualController\VisualController\obj\Debug\VisualController.exe
+c:\users\timod\documents\visual studio 2015\Projects\VisualController\VisualController\obj\Debug\VisualController.pdb
+C:\Users\timod\Documents\Visual Studio 2015\Projects\VisualController\VisualController\bin\Debug\BattleBotClientLib.dll
+C:\Users\timod\Google Drive\Proftaak groep 5 1617nj\Werkmap Timo\VisualController\VisualController\bin\Debug\VisualController.exe.config
+C:\Users\timod\Google Drive\Proftaak groep 5 1617nj\Werkmap Timo\VisualController\VisualController\obj\Debug\VisualController.exe
+C:\Users\timod\Google Drive\Proftaak groep 5 1617nj\Werkmap Timo\VisualController\VisualController\obj\Debug\VisualController.pdb
+C:\Users\svlie\Google Drive\Proftaak groep 5 1617nj\Werkmap Timo\VisualController (1)\VisualController\bin\Debug\VisualController.exe.config
+C:\Users\svlie\Google Drive\Proftaak groep 5 1617nj\Werkmap Timo\VisualController (1)\VisualController\obj\Debug\VisualController.exe
+C:\Users\svlie\Google Drive\Proftaak groep 5 1617nj\Werkmap Timo\VisualController (1)\VisualController\obj\Debug\VisualController.pdb
