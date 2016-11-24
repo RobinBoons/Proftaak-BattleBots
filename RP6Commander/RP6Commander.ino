@@ -39,9 +39,11 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+  Serial.println("in loop");
   receiveMessage();
+  
   //CheckForHit();
-  RobotController();
+  //RobotController();
 }
 
 void RobotController() {
@@ -51,7 +53,7 @@ void RobotController() {
 
   Rp6.moveAtSpeed(robotSpeed, robotSpeed);
 
-/* 
+ 
   if (robMovement == forward) {
     Rp6.changeDirection(RP6_FORWARD);
   }
@@ -68,45 +70,59 @@ void RobotController() {
   else if (robDirection == right) {
     Rp6.changeDirection(RP6_RIGHT);
   }
-  */
+  
 }
 
 void CommandParser(String command) {
 
-  Rp6.moveAtSpeed(robotSpeed, robotSpeed);
-  //Serial.println(robotSpeed);
-  if (command == "%FWD$"){
-    Rp6.changeDirection(RP6_FORWARD);
-    //Serial.println("ComaandParser");
-    //Serial.println(command);
+ 
+ // Serial.println(command);
+  
+ if (command.equals("%FWD$")) {
+   Rp6.moveAtSpeed(robotSpeed, robotSpeed);
+   Rp6.changeDirection(RP6_FORWARD);
+   // Serial.println("in if");
+  
+    //robMovement = forward;
+    //robDirection = straight;
   }
- /* if (command == "%FWD$") {
-    robMovement = forward;
-    robDirection = straight;
+ else if (command == "%BKW$") {
+  Rp6.changeDirection(RP6_BACKWARD);
+    //robMovement = backward;
+    //robDirection = straight;
   }
-  if (command == "%BKW$") {
-    robMovement = backward;
-    robDirection = straight;
+  else{
+   // Serial.println("hoi");
   }
   if (command == "%LFT$") {
-    robDirection = left;
+    Rp6.changeDirection(RP6_LEFT);
   }
-  if (command == "%RGT$") {
-    robDirection = right;
+  else if (command == "%RGT$") {
+    Rp6.changeDirection(RP6_RIGHT);
+   // robDirection = right;
+  }
+  else{
+   // Serial.println("hoi");
   }
   
   if (command == "%SHK$") {
     // dit is niet netjes
-    FireServo();
+    //FireServo();
     delay(10);
-    RetractServo();
+    //RetractServo();
+  }
+  else{
+    
   }
   
   if (command  == "%STP$") {
     robMovement = none;
     //RobotSpeed = 0;
   }
-  */
+  else{
+    
+  }
+ 
 }
 /*
 void FireServo() {
@@ -127,11 +143,12 @@ void CheckForHit() {
 */
 void receiveMessage() {
   receivedData = "";
+  //Serial.println("in receive");
   if (Serial.available() > 0)
   {
     // read the incoming byte:
     byte incomingByte = Serial.read();
-    //Serial.println(incomingByte);
+   // Serial.println(incomingByte);
 
     // incoming
     char receivedCharacter = (char) incomingByte;
@@ -146,7 +163,7 @@ void receiveMessage() {
         delay(10);
       }
       while (receivedCharacter != '$');
-      //Serial.println(receivedData);
+     // Serial.println(receivedData);
       CommandParser(receivedData);
     }
   }
