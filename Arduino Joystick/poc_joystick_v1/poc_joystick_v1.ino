@@ -57,7 +57,7 @@ void loop() {
   //Serial.write("loop");
   CheckForwardBackward();
   CheckLeftRight();
-  CheckSpeed();
+//  CheckSpeed();
   RobotController();
   delay(50);
 }
@@ -101,7 +101,7 @@ void CheckLeftRight() {
   }
 
 }
-
+/*
 void CheckSpeed() {
   int joyValue = analogRead(SPD_JOY_Y);
 
