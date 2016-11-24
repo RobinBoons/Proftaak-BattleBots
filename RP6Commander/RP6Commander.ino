@@ -1,15 +1,16 @@
 #include <SPI.h>
 #include <Servo.h>
-//#include "Timer.h"
+#include "Timer.h"
 #include "Rp6.h"
 
 #define robotSpeed 40
 #define ShankPin 3
-#define HitboxPin 4
+#define HitboxPin 2
 
 
 String receivedData = "";
 String incomingMessage = "";
+
 Servo myservo;
 
 enum robotMovement {
@@ -27,6 +28,8 @@ enum robotDirection {
 robotMovement robMovement = none;
 robotDirection robDirection = straight;
 
+Timer t;
+
 void setup() {
   Serial.begin(9600);
   myservo.attach(5);
@@ -35,6 +38,7 @@ void setup() {
   pinMode(ShankPin, OUTPUT);
   digitalWrite(ShankPin, HIGH);
   pinMode(HitboxPin, INPUT);
+  attachInterrupt(digitalPinToInterrupt(HitboxPin), RegisterHit, CHANGE);
 }
 
 void loop() {
@@ -44,6 +48,7 @@ void loop() {
   
   //CheckForHit();
   //RobotController();
+  t.update();
 }
 
 void RobotController() {
@@ -106,41 +111,36 @@ void CommandParser(String command) {
   }
   
   if (command == "%SHK$") {
-    // dit is niet netjes
-    //FireServo();
-    delay(10);
-    //RetractServo();
+    FireServo();
+    t.after(1000, RetractServo);
+    
   }
   else{
     
   }
   
   if (command  == "%STP$") {
-    robMovement = none;
-    //RobotSpeed = 0;
+    // robMovement = none;
+    Rp6.stop();
   }
   else{
     
   }
  
 }
-/*
+
 void FireServo() {
   myservo.write(30);
-  // hier timer
 }
 
 void RetractServo() {
   myservo.write(320);
-  // hier end timer
 }
 
-void CheckForHit() {
-  if (digitalRead(HitboxPin) == HIGH) {
-    //xbee send hit
-  }
+void RegisterHit(){
+  Serial.println("%HIT$");
 }
-*/
+
 void receiveMessage() {
   receivedData = "";
   //Serial.println("in receive");
@@ -168,4 +168,3 @@ void receiveMessage() {
     }
   }
 }
-
