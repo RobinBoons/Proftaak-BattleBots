@@ -4,11 +4,13 @@
 #define FWD_JOY_Y A0
 #define SPD_JOY_X A1
 #define SPD_JOY_Y A2
-#define SHANK_BTN 7
+#define SPD_JOY_B A3
 
 /*
    square joystick deadzones: x ~530, y ~540
    round joystrick deadzones: x -505, y -516
+
+   button deadzone = ~500 nominal, 0 when pressed, or <5 at least.
 
    FWD_JOY is exclusively for making the robot go forwards and backwards (Y-Axis)
    SPD_JOY is for going right or left (X-axis) and for increasing or decreasing the speed (Y-axis)
@@ -38,11 +40,10 @@ enum robotDirection {
 robotMovement robMovement = none;
 robotDirection robDirection = straight;
 int robotSpeed = 0;
-
+int shankStatus = 0;
 void setup() {
   Serial.begin(9600);
   //Rp6.begin();
-  pinMode(SHANK_BTN, INPUT);
   //digitalWrite(SHANK_BTN, HIGH);
 
   //Serial.write("setup");
@@ -57,6 +58,7 @@ void loop() {
   //Serial.write("loop");
   CheckForwardBackward();
   CheckLeftRight();
+  CheckButton();
 //  CheckSpeed();
   RobotController();
   delay(50);
@@ -150,14 +152,22 @@ void RobotController() {
     Serial.write("%LFT$\n");
   }
 
-  if (digitalRead(SHANK_BTN) == HIGH) {
-    Serial.println("%ATT$\n");
-  }
-
   if (robMovement == none) {
     Serial.write("%STP$\n");
   }
 
+  if(shankStatus == 1){
+    Serial.write("%ATK$\n");
+    shankStatus = 0;
+  }
+
+}
+
+void CheckButton(){
+  int buttonValue = analogRead(SPD_JOY_B);
+  if(shankStatus == 0 && buttonValue < 5){
+    shankStatus = 1;
+  }
 }
 
 
