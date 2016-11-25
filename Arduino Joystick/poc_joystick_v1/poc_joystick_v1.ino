@@ -79,7 +79,7 @@ void CheckForwardBackward() {
   if (joyValue > 600) {
     robMovement = forward;
   }
-  else if (joyValue < 500) {
+  else if (joyValue < 400) {
     robMovement = backward;
   }
   else {
@@ -152,12 +152,12 @@ void RobotController() {
     Serial.write("%LFT$\n");
   }
 
-  if (robMovement == none) {
+  if (robMovement == none && robDirection == straight) {
     Serial.write("%STP$\n");
   }
 
   if(shankStatus == 1){
-    Serial.write("%ATK$\n");
+    Serial.write("%SHK$\n");
     shankStatus = 0;
   }
 

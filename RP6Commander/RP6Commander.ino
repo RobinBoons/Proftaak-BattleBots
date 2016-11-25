@@ -3,7 +3,7 @@
 #include "Timer.h"
 #include "Rp6.h"
 
-#define robotSpeed 40
+#define robotSpeed 255
 #define ShankPin 7
 #define HitboxPin 2
 #define MotorPwm 5
@@ -93,6 +93,7 @@ void CommandParser(String command) {
     //robDirection = straight;
   }
  else if (command == "%BKW$") {
+  Rp6.moveAtSpeed(robotSpeed, robotSpeed);
   Rp6.changeDirection(RP6_BACKWARD);
     //robMovement = backward;
     //robDirection = straight;
@@ -101,9 +102,11 @@ void CommandParser(String command) {
    // Serial.println("hoi");
   }
   if (command == "%LFT$") {
+    Rp6.moveAtSpeed(robotSpeed, robotSpeed);
     Rp6.changeDirection(RP6_LEFT);
   }
   else if (command == "%RGT$") {
+    Rp6.moveAtSpeed(robotSpeed, robotSpeed);
     Rp6.changeDirection(RP6_RIGHT);
    // robDirection = right;
   }
