@@ -4,8 +4,9 @@
 #include "Rp6.h"
 
 #define robotSpeed 40
-#define ShankPin 3
+#define ShankPin 7
 #define HitboxPin 2
+#define MotorPwm 5
 
 
 String receivedData = "";
@@ -32,7 +33,7 @@ Timer t;
 
 void setup() {
   Serial.begin(9600);
-  myservo.attach(5);
+  myservo.attach(MotorPwm);
   Rp6.begin();
   // hierdoor staat de shank eigenlijk constant onder stroom
   pinMode(ShankPin, OUTPUT);
