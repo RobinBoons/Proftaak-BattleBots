@@ -1,0 +1,11 @@
+C:\Users\timod\Desktop\csharp-mqtt-samples-master-630fef7cf0a484948adae03025cbbb4c36073cce\Arduinoconnectionexample\bin\Debug\mqttsampleclient.exe.config
+C:\Users\timod\Desktop\csharp-mqtt-samples-master-630fef7cf0a484948adae03025cbbb4c36073cce\Arduinoconnectionexample\bin\Debug\mqttsampleclient.exe
+C:\Users\timod\Desktop\csharp-mqtt-samples-master-630fef7cf0a484948adae03025cbbb4c36073cce\Arduinoconnectionexample\bin\Debug\mqttsampleclient.pdb
+C:\Users\timod\Desktop\csharp-mqtt-samples-master-630fef7cf0a484948adae03025cbbb4c36073cce\Arduinoconnectionexample\bin\Debug\M2Mqtt.Net.dll
+C:\Users\timod\Desktop\csharp-mqtt-samples-master-630fef7cf0a484948adae03025cbbb4c36073cce\Arduinoconnectionexample\bin\Debug\M2Mqtt.Net.pdb
+C:\Users\timod\Desktop\csharp-mqtt-samples-master-630fef7cf0a484948adae03025cbbb4c36073cce\Arduinoconnectionexample\obj\Debug\arduinobuttonclient.csprojResolveAssemblyReference.cache
+C:\Users\timod\Desktop\csharp-mqtt-samples-master-630fef7cf0a484948adae03025cbbb4c36073cce\Arduinoconnectionexample\obj\Debug\mqttexampleclient.Form1.resources
+C:\Users\timod\Desktop\csharp-mqtt-samples-master-630fef7cf0a484948adae03025cbbb4c36073cce\Arduinoconnectionexample\obj\Debug\mqttsampleclient.Properties.Resources.resources
+C:\Users\timod\Desktop\csharp-mqtt-samples-master-630fef7cf0a484948adae03025cbbb4c36073cce\Arduinoconnectionexample\obj\Debug\arduinobuttonclient.csproj.GenerateResource.Cache
+C:\Users\timod\Desktop\csharp-mqtt-samples-master-630fef7cf0a484948adae03025cbbb4c36073cce\Arduinoconnectionexample\obj\Debug\mqttsampleclient.exe
+C:\Users\timod\Desktop\csharp-mqtt-samples-master-630fef7cf0a484948adae03025cbbb4c36073cce\Arduinoconnectionexample\obj\Debug\mqttsampleclient.pdb

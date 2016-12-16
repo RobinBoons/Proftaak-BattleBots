@@ -1,0 +1,11 @@
+C:\Users\timod\Desktop\csharp-mqtt-samples-master-630fef7cf0a484948adae03025cbbb4c36073cce\chatclientexample\bin\Debug\chatclientexample.exe.config
+C:\Users\timod\Desktop\csharp-mqtt-samples-master-630fef7cf0a484948adae03025cbbb4c36073cce\chatclientexample\bin\Debug\chatclientexample.exe
+C:\Users\timod\Desktop\csharp-mqtt-samples-master-630fef7cf0a484948adae03025cbbb4c36073cce\chatclientexample\bin\Debug\chatclientexample.pdb
+C:\Users\timod\Desktop\csharp-mqtt-samples-master-630fef7cf0a484948adae03025cbbb4c36073cce\chatclientexample\bin\Debug\M2Mqtt.Net.dll
+C:\Users\timod\Desktop\csharp-mqtt-samples-master-630fef7cf0a484948adae03025cbbb4c36073cce\chatclientexample\bin\Debug\M2Mqtt.Net.pdb
+C:\Users\timod\Desktop\csharp-mqtt-samples-master-630fef7cf0a484948adae03025cbbb4c36073cce\chatclientexample\obj\Debug\chatclientexample.csprojResolveAssemblyReference.cache
+C:\Users\timod\Desktop\csharp-mqtt-samples-master-630fef7cf0a484948adae03025cbbb4c36073cce\chatclientexample\obj\Debug\chatclientexample.Form1.resources
+C:\Users\timod\Desktop\csharp-mqtt-samples-master-630fef7cf0a484948adae03025cbbb4c36073cce\chatclientexample\obj\Debug\chatclientexample.Properties.Resources.resources
+C:\Users\timod\Desktop\csharp-mqtt-samples-master-630fef7cf0a484948adae03025cbbb4c36073cce\chatclientexample\obj\Debug\chatclientexample.csproj.GenerateResource.Cache
+C:\Users\timod\Desktop\csharp-mqtt-samples-master-630fef7cf0a484948adae03025cbbb4c36073cce\chatclientexample\obj\Debug\chatclientexample.exe
+C:\Users\timod\Desktop\csharp-mqtt-samples-master-630fef7cf0a484948adae03025cbbb4c36073cce\chatclientexample\obj\Debug\chatclientexample.pdb
