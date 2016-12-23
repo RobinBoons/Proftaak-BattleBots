@@ -18,7 +18,7 @@ char mqttPass[] = "Xjr1MGsdYEKtJ5";
 // This is the client Id that will be used, the mac will be append!
 String mqttClientId = "arduino-";
 // This is the start of the topic that will be used. ClientID and button1 will be append
-String subscribeTopic = "private/i339322_timojansen/#";
+String subscribeTopic = "private/i339322_timojansen/chat";
 
 void callback(char* topic, byte* payload, unsigned int len) {
   // Wrtie the topic to the debugger (or check it...)
